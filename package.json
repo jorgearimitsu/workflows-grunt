@@ -1,0 +1,15 @@
+{
+  "name": "workflow_grunt",
+  "version": "1.0.0",
+  "description": "A learning project of workflows with grunt and bower",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Jorge Arimitsu",
+  "license": "ISC"
+}
