@@ -11,5 +11,8 @@
     "url": "?.git"
   },
   "author": "Jorge Arimitsu",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
 }
