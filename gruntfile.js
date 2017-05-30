@@ -6,10 +6,21 @@ module.exports = function(grunt) {
         separator: '\n\n//==================================================\n',
         banner: '//========== <%= concat.dist.dest %> ==========\n'
       },
-
       dist: {
         src: ['development/scripts/*.js'],
         dest: 'build/js/script.js'
+      }
+    },
+
+    sass: {
+      dist: {
+        options: {
+          sourcemap: 'none',
+          style: 'compressed'
+        },
+        files: {
+          'build/css/style.css': 'development/sass/style.scss'
+        }
       }
     }
 
@@ -17,6 +28,7 @@ module.exports = function(grunt) {
 
   //load plugins
   grunt.loadNpmTasks('grunt-contrib-concat');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
-  grunt.registerTask('default', ['concat']);
+  grunt.registerTask('default', ['concat', 'sass']);
 };
